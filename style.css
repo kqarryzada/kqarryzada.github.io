@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Lora');
 
 html, body {
     margin: 0;
@@ -14,10 +16,8 @@ html, body {
     margin: auto;
     display: table;
     top: 0;
-    max-width: 100%;
-    max-height: 100%;
-    background-repeat: no-repeat;
     background-position: 50% 50%
+    border: solid #A60000 40px;
 }
 
 .panel .inner {
@@ -25,6 +25,7 @@ html, body {
     vertical-align: middle;
     width: 100%
     max-width: none;
+    background-repeat: no-repeat;
 }
 
 .content {
@@ -34,7 +35,7 @@ html, body {
 }
 
 .content h1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lora', sans-serif;
     color: #F9F3F4;
     text-shadow: 0px 0px 300px #000;
     font-size: 300%;
@@ -89,14 +90,29 @@ html, body {
 .panel.one {
     background: url("images/space.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 .panel.prev_proj {
     background: url("images/goDeeper.png");
     background-size: 100%;
     background-position: left top;
+    background-repeat: no-repeat;
 }
 .panel.three {
     background: url("images/demoman.png");
     background-size: 100%;
     background-position: left top;
+    background-repeat: no-repeat;
+}
+.panel.bottom {
+    background: url("images/last.jpg");
+    height: 50%
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    padding: 5px;
+    /*text-shadow: 0px 0px 300px #000;*/
+    /*font-size: 200%;*/
 }
