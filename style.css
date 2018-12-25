@@ -17,19 +17,18 @@ html, body {
     display: table;
     top: 0;
     background-position: 50% 50%
-    border: solid #A60000 40px;
+    /*border: solid #A60000 40px;*/
 }
 
 .panel .inner {
     display: table-cell;
     vertical-align: middle;
-    width: 100%
     max-width: none;
     background-repeat: no-repeat;
 }
 
 .content {
-    max-width: 1000px;
+    max-width: 1000px;      /*keeps the stuff inside the panels from reaching the edges of the screen*/
     margin: 0 auto;
     text-align: center;
 }
@@ -46,10 +45,10 @@ html, body {
 .btn {
     border-radius: 9px;
     font-family: 'Oswald', sans-serif;
-    color: #036A81;
+    color: #A60000;
     font-size: 135%;
     padding: 10px 20px;
-    border: solid #036A81 3px;
+    border: solid #A60000 3px;
     text-transform: uppercase;
     text-decoration: none;
     opacity: 1;
