@@ -77,32 +77,33 @@ html, body {
     opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
-    .content h1 {
-        font-size: 250%
-    }
-    .btn {
-        font-size: 110%;
-        padding: 7px 15px;
-    }
-}
-
 .panel.one {
     background: url("images/space.jpg");
-    background-size: 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .panel.prev_proj {
     background: url("images/goDeeper.png");
-    background-size: 100%;
+    /*background-size: 100%;*/
     background-position: left top;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-.panel.three {
+.panel.aboutme {
     background: url("images/demoman.png");
-    background-size: 100%;
+    /*background-size: 100%;*/
     background-position: left top;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.panel.work {
+    background: url("images/work.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+    /*padding: 500px;*/
 }
 .panel.bottom {
     background: url("images/last.jpg");
@@ -115,4 +116,17 @@ p {
     padding: 5px;
     /*text-shadow: 0px 0px 300px #000;*/
     /*font-size: 200%;*/
+}
+
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 150%
+    }
+    .btn {
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+    p {
+        font-size: 50%
+    }
 }
