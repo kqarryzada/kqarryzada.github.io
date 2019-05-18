@@ -13,12 +13,12 @@ html, body {
 
 .panel {
     height: 100vh;
-    width: 98vw;
+    width: 100vw;
     margin: auto;
     display: table;
-    top: 0;
+    top: 0; 
     background-position: left;
-    border: 2px solid #A60000
+    /*border: 2px solid #A60000*/
 }
 
 .panel .inner {
@@ -29,7 +29,9 @@ html, body {
 }
 
 .content {
-    max-width: 1000px;      /*keeps the stuff inside the panels from reaching the edges of the screen*/
+    /*keeps the stuff inside the panels from reaching the edges of the screen*/
+    max-width: 1000px;
+
     margin: 0 auto;
     text-align: center;
 }
@@ -39,8 +41,6 @@ html, body {
     color: #F9F3F4;
     text-shadow: 0px 0px 300px #000;
     font-size: 300%;
-    /*position: absolute;
-    right: 50%*/
 }
 
 .btn {
@@ -53,8 +53,6 @@ html, body {
     text-transform: uppercase;
     text-decoration: none;
     opacity: 1;
-    /*position: absolute;
-    left: 50%*/
 }
 
 .btn:hover {
@@ -84,14 +82,12 @@ html, body {
 }
 .panel.prev_proj {
     background: url("images/goDeeper.png");
-    /*background-size: 100%;*/
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .panel.aboutme {
-    background: url("images/demoman.png");
-    /*background-size: 100%;*/
+    background: url("images/work.jpg");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -103,7 +99,6 @@ html, body {
     -o-background-size: cover;
     background-size: cover;
     background-size: 100% 100%;
-    /*padding: 500px;*/
 }
 .panel.bottom {
     background: url("images/last.jpg");
@@ -114,10 +109,18 @@ p {
     font-family: 'Ubuntu', sans-serif;
     color: white;
     padding: 5px;
-    /*text-shadow: 0px 0px 300px #000;*/
-    /*font-size: 200%;*/
 }
 
+.aboutMe {
+    color: black;
+    font-family: 'Lucida Console', sans-serif;
+}
+
+.myContainer {
+    background-color: white;
+    border-style: dotted;
+}
+/*Change a few parameters for mobile screens*/
 @media screen and (max-width: 768px) {
     .content h1 {
         font-size: 150%
