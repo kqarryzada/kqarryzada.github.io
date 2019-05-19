@@ -122,38 +122,35 @@ p {
     background-size: 100%;
 }
 /*'span' is here to constrain background color to the area around the text*/
-.githubText span {
+.projectText span {
     background: black;
     border-radius: 9px;
     padding: 10px 20px;
 }
-
-
-/* Bottom panel */
-.panel.bottom {
-    background: url("images/last.jpg");
-    height: 20%;
-    text-align: center;
-    /*position: absolute;*/
+.projectTextDescription {
+    color: white;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
-/* Social media links*/
+.iconContainer {
+    /* Container used to store media links */
+
+}
 .icon {
-    padding 0px;
     display: inline-block;
-}
-a i {
     list-style: none;
-    color: black;
+    color: var(--theme-color);
     font-size: 100px;
-    padding: 40px;
-    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
     cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
 }
-/*li:hover {
+/*.icon:hover {
     color: white;
     font-size: 140px;
-    padding: 20px;
     transition: 0.5s;
+    padding-top: 0px;
 }*/
 
 
