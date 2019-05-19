@@ -11,8 +11,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    /*width: 100%;*/
     background-color: var(--themeColor);
+    overflow-x: hidden;
 }
 
 .panel {
@@ -22,7 +22,6 @@ html, body {
     display: table;
     top: 0; 
     background-position: left;
-    /*border: 2px solid #A60000*/
 }
 
 .panel .inner {
@@ -33,11 +32,11 @@ html, body {
 }
 
 .content {
-    /*keeps the stuff inside the panels from reaching the edges of the screen*/
-    max-width: 1000px;
-
     margin: 0 auto;
     text-align: center;
+
+    /*keeps the stuff inside the panels from reaching the edges of the screen*/
+    max-width: 50vw;
 }
 
 .content h1 {
@@ -47,11 +46,6 @@ html, body {
     font-size: 300%;
 }
 
-h1 span {
-    background-color: black;
-    border-radius: 9px;
-    padding: 10px 20px;
-}
 p {
     font-family: 'Ubuntu', sans-serif;
     color: white;
@@ -117,15 +111,21 @@ p {
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.aboutMe {
-    color: white;
-    font-family: 'Lucida Console', sans-serif;
-    text-align: left;
-}
-.myContainer {
+.content .aboutMeTitle {
     background-color: black;
     border-color: white;
     border-style: dotted;
+    text-align: center;
+}
+.aboutMeContainer {
+    background-color: black;
+    border-color: white;
+    border-style: dotted;
+}
+.aboutMeText {
+    color: white;
+    font-family: 'Lucida Console', sans-serif;
+    text-align: left;
 }
 
 
@@ -152,7 +152,10 @@ p {
 
 
 /*Change a few parameters for mobile screens*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+    .content {
+        max-width: 50vw;
+    }
     .content h1 {
         font-size: 150%
     }
