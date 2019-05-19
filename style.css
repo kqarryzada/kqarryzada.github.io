@@ -42,6 +42,11 @@ html, body {
     text-shadow: 0px 0px 300px #000;
     font-size: 300%;
 }
+p {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    padding: 5px;
+}
 
 .btn {
     border-radius: 9px;
@@ -80,6 +85,28 @@ html, body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+
+/* About me */
+.panel.aboutme {
+    background: url("images/work.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.aboutMe {
+    color: white;
+    font-family: 'Lucida Console', sans-serif;
+    text-align: left;
+}
+.myContainer {
+    background-color: black;
+    border-color: white;
+    border-style: dotted;
+}
+
+
+/* Previous Projects */
 .panel.github {
     background: url("images/goDeeper.png");
     background-position: left top;
@@ -92,33 +119,14 @@ html, body {
     border-radius: 9px;
     padding: 10px 20px;
 }
-.panel.aboutme {
-    background: url("images/work.jpg");
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
+
+
 .panel.bottom {
     background: url("images/last.jpg");
     height: 50%
 }
 
-p {
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    padding: 5px;
-}
 
-.aboutMe {
-    color: black;
-    font-family: 'Lucida Console', sans-serif;
-    text-align: left;
-}
-
-.myContainer {
-    background-color: white;
-    border-style: dotted;
-}
 /*Change a few parameters for mobile screens*/
 @media screen and (max-width: 768px) {
     .content h1 {
