@@ -80,24 +80,22 @@ html, body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.panel.prev_proj {
+.panel.github {
     background: url("images/goDeeper.png");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+/*'span' is here to constrain background color to the area around the text*/
+.githubText span {
+    background: black;
+    border-radius: 9px;
+    padding: 10px 20px;
+}
 .panel.aboutme {
     background: url("images/work.jpg");
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.panel.work {
-    background: url("images/work.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     background-size: 100% 100%;
 }
 .panel.bottom {
@@ -114,6 +112,7 @@ p {
 .aboutMe {
     color: black;
     font-family: 'Lucida Console', sans-serif;
+    text-align: left;
 }
 
 .myContainer {
