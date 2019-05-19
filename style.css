@@ -137,11 +137,11 @@ p {
     /*position: absolute;*/
 }
 /* Social media links*/
-li {
+.icon {
     padding 0px;
     display: inline-block;
 }
-li i {
+a i {
     list-style: none;
     color: black;
     font-size: 100px;
