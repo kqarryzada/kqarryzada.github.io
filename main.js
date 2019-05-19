@@ -18,33 +18,30 @@ function blinkCursor() {
     toggle = !toggle  
 }
 
-function openEmail() {
-    window.open(emailLink);
-}
-
-function openLinkedIn() {
-    window.open(linkedInURL);
-}
-
-function openGithub() {
-    window.open(githubURL);
-}
-
-function openRepo() {
-    window.open(repoURL);
-}
-
-function openStackOverflow() {
-    window.open(stkOverflowURL);
-}
-
 // Makes it possible to see the link in bottom left when hovering over an icon
 function setupHref() {
-    document.getElementById("emailIcon").href = emailLink;
-    document.getElementById("linkedInIcon").href = linkedInURL;
-    document.getElementById("githubIcon").href = githubURL;
-    document.getElementById("repoIcon").href = repoURL;
-    document.getElementById("SOIcon").href = stkOverflowURL;
+    // set "target" property to "_blank" to open links in a new tab
+    const blank = "_blank";
+
+    let e = document.getElementById("emailIcon");
+    e.href = emailLink;
+    e.target = blank;
+
+    let linkedin = document.getElementById("linkedInIcon");
+    linkedin.href = linkedInURL;
+    linkedin.target = blank;
+
+    let git = document.getElementById("githubIcon");
+    git.href = githubURL;
+    git.target = blank;
+    
+    let repo = document.getElementById("repoIcon");
+    repo.href = repoURL;
+    repo.target = blank;
+    
+    let so = document.getElementById("SOIcon");
+    so.href = stkOverflowURL;
+    so.target = blank;
 }
 
 function main() {
