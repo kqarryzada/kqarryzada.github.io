@@ -7,7 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
+    /*width: 100%;*/
     background-color: #A60000;
 }
 
@@ -41,6 +41,12 @@ html, body {
     color: #F9F3F4;
     text-shadow: 0px 0px 300px #000;
     font-size: 300%;
+}
+
+h1 span {
+    background-color: black;
+    border-radius: 9px;
+    padding: 10px 20px;
 }
 p {
     font-family: 'Ubuntu', sans-serif;
@@ -81,9 +87,9 @@ p {
 }
 
 .panel.one {
-    background: url("images/space.jpg");
+    background: url("images/goDeeper.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 
@@ -92,7 +98,7 @@ p {
     background: url("images/work.jpg");
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 .aboutMe {
     color: white;
@@ -108,10 +114,10 @@ p {
 
 /* Previous Projects */
 .panel.github {
-    background: url("images/goDeeper.png");
+    background: url("images/khalid.jpg");
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 /*'span' is here to constrain background color to the area around the text*/
 .githubText span {
@@ -121,6 +127,7 @@ p {
 }
 
 
+/* Bottom panel */
 .panel.bottom {
     background: url("images/last.jpg");
     height: 50%
