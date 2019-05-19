@@ -3,12 +3,16 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
+:root {
+    --themeColor: #282923;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     /*width: 100%;*/
-    background-color: #A60000;
+    background-color: var(--themeColor);
 }
 
 .panel {
@@ -38,7 +42,7 @@ html, body {
 
 .content h1 {
     font-family: 'Lora', sans-serif;
-    color: #F9F3F4;
+    color: white;
     text-shadow: 0px 0px 300px #000;
     font-size: 300%;
 }
@@ -86,10 +90,23 @@ p {
     opacity: 1;
 }
 
-.panel.one {
-    background: url("images/goDeeper.png");
+
+/* Menu bar */
+.menuBar {
+    background-color: var(--themeColor);
+    height: 40px;
+}
+
+
+/* Top panel */
+.panel.top {
+    background: url("images/goDeeper4.png");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    /* Set the height value to force the top panel to end where the image height
+    ends. Without this, there will be padding until the bottom of the screen.*/
+    height: 602px;
 }
 
 
