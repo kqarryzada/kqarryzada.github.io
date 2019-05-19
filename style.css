@@ -147,7 +147,24 @@ p {
 /* Bottom panel */
 .panel.bottom {
     background: url("images/last.jpg");
-    height: 50%
+    height: 20%;
+    text-align: center;
+}
+/* Social media links*/
+.myContainer2 {
+    display: inline-block;
+}
+li {
+    list-style: none;
+    color: black;
+    font-size: 100px;
+    padding: 40px;
+}
+li:hover {
+    color: white;
+    font-size: 140px;
+    padding: 20px;
+    /*transition: 0.5s;*/
 }
 
 
