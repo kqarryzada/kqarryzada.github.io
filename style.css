@@ -69,21 +69,6 @@ p {
     border: solid #fff 3px;
 }
 
-.secretbtn {
-    border-radius: 9px;
-    font-family: 'Oswald', sans-serif;
-    color: #036A81;
-    font-size: 135%;
-    padding: 10px 20px;
-    border: solid #036A81 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-    opacity: 0;
-}
-.secretbtn:hover {
-    opacity: 1;
-}
-
 
 /* Menu bar */
 .menuBar {
@@ -149,23 +134,27 @@ p {
     background: url("images/last.jpg");
     height: 20%;
     text-align: center;
+    /*position: absolute;*/
 }
 /* Social media links*/
-.myContainer2 {
+li {
+    padding 0px;
     display: inline-block;
 }
-li {
+li i {
     list-style: none;
     color: black;
     font-size: 100px;
     padding: 40px;
+    height: auto;
+    cursor: pointer;
 }
-li:hover {
+/*li:hover {
     color: white;
     font-size: 140px;
     padding: 20px;
-    /*transition: 0.5s;*/
-}
+    transition: 0.5s;
+}*/
 
 
 /*Change a few parameters for mobile screens*/
