@@ -83,7 +83,6 @@ p {
 /*-------------------------------------------*/
 .panel.top {
     background: url("images/goDeeper4.png");
-    background-size: cover;
     background-repeat: no-repeat;
 
     /* Set the height value to force the top panel to end where the image height
@@ -104,8 +103,9 @@ p {
 /*-------------------------------------------*/
 .panel.aboutme {
     background: url("images/work.jpg");
-    background-position: left top;
-    background-size: cover;
+    /*background-position: left top;*/
+    background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 .content .aboutMeTitle {
@@ -132,7 +132,7 @@ p {
 .panel.projects {
     background: url("images/khalid.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: auto 100%;
     background-repeat: no-repeat;
 }
 .projectText span {
@@ -175,6 +175,10 @@ p {
         max-width: 80vw;
     }
     .content h1 {
+        font-size: 200%;
+    }
+
+    p {
         font-size: 150%;
     }
 
@@ -186,8 +190,11 @@ p {
         font-size: 25px;
         text-align: center;
     }
+    .panel.aboutme {
+        background-position: auto 100%;
+    }
 
     .icon {
-        font-size: 30px;
+        font-size: 75px;
     }
 }
