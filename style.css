@@ -57,6 +57,11 @@ p {
     padding: 5px;
 }
 
+/* Change color of hyperlinks to be more visible */
+.coloredHLink {
+    color: #1ab2ff;
+}
+
 /*-------------------------------------------*/
 /* --------------Navigation bar------------- */
 /*-------------------------------------------*/
