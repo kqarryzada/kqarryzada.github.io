@@ -34,11 +34,11 @@ function setupHref() {
     let git = document.getElementById("githubIcon");
     git.href = githubURL;
     git.target = blank;
-    
+
     let repo = document.getElementById("repoIcon");
     repo.href = repoURL;
     repo.target = blank;
-    
+
     let so = document.getElementById("SOIcon");
     so.href = stkOverflowURL;
     so.target = blank;
