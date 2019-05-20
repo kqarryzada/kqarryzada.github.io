@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
 
 /* Define global variables */
 :root {
@@ -120,7 +121,7 @@ p {
 }
 .aboutMeText {
     color: white;
-    font-family: 'Lucida Console', sans-serif;
+    font-family: "PT Mono", "Lucida Console", "Consolas", monospace;
     text-align: left;
 }
 /*-------------------------------------------*/
@@ -165,11 +166,25 @@ p {
 
 /* Change a few parameters for mobile screens */
 @media screen and (max-width: 1000px) {
+    .panel {
+        height: 50vh;
+    }
+
     .content {
-        max-width: 50vw;
+        /* Allow content to take up more horizontal space on mobile */
+        max-width: 80vw;
     }
     .content h1 {
         font-size: 150%;
+    }
+
+    .navBar {
+        height: 50px;
+    }
+
+    .navText {
+        font-size: 25px;
+        text-align: center;
     }
 
     .icon {
