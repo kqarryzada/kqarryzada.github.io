@@ -82,7 +82,7 @@ p {
 /* ----------------Top panel---------------- */
 /*-------------------------------------------*/
 .panel.top {
-    background: url("images/goDeeper4.png");
+    background-image: url("images/goDeeper4.png");
     background-repeat: no-repeat;
 
     /* Set the height value to force the top panel to end where the image height
@@ -102,7 +102,7 @@ p {
 /* -----------------About me---------------- */
 /*-------------------------------------------*/
 .panel.aboutme {
-    background: url("images/work.jpg");
+    background-image: url("images/work.jpg");
     /*background-position: left top;*/
     background-size: 100% 100%;
     background-position: left center;
@@ -130,7 +130,7 @@ p {
 /* ------------Previous Projects------------ */
 /*-------------------------------------------*/
 .panel.projects {
-    background: url("images/khalid.jpg");
+    background-image: url("images/khalid.jpg");
     background-position: center center;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -210,9 +210,6 @@ p {
 
     .panel.projects {
         background-size: auto 100%;
-    }
-    .icon {
-        font-size: 75px;
     }
 }
 
