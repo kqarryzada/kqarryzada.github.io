@@ -105,7 +105,7 @@ p {
     background: url("images/work.jpg");
     /*background-position: left top;*/
     background-size: 100% 100%;
-    background-position: center;
+    background-position: left center;
     background-repeat: no-repeat;
 }
 .content .aboutMeTitle {
@@ -167,7 +167,7 @@ p {
 /* Change a few parameters for mobile screens */
 @media screen and (max-width: 1000px) {
     .panel {
-        height: 50vh;
+        height: 80vh;
     }
 
     .content {
@@ -175,7 +175,7 @@ p {
         max-width: 80vw;
     }
     .content h1 {
-        font-size: 200%;
+        font-size: 300%;
     }
 
     p {
@@ -190,11 +190,29 @@ p {
         font-size: 25px;
         text-align: center;
     }
-    .panel.aboutme {
-        background-position: auto 100%;
+
+    .panel.top {
+        background-size: auto 100%;
+    }
+    .topPanelTitle span {
+        width: 80vw;
     }
 
+    .panel.aboutme {
+        background-size: auto 100%;
+    }
+
+    .panel.projects {
+        background-size: auto 100%;
+    }
     .icon {
         font-size: 75px;
+    }
+}
+
+/* Just in case the window is extremely narrow */
+@media screen and (max-width: 555px) {
+    .topPanelTitle span {
+        font-size: 50%;
     }
 }

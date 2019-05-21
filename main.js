@@ -15,7 +15,7 @@ function blinkCursor() {
         document.getElementById("cursor").innerHTML = cursorOn;
     else
         document.getElementById("cursor").innerHTML = cursorOff;
-    toggle = !toggle  
+    toggle = !toggle;
 }
 
 // Makes it possible to see the link in bottom left when hovering over an icon
