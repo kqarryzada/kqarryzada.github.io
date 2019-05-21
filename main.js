@@ -50,9 +50,9 @@ function main() {
     }
 
     // Every 0.5s, make the cursor "blink" asynchronously
-    // setInterval(function() {
-    //     blinkCursor()
-    // }, 500);
+    setInterval(function() {
+        blinkCursor()
+    }, 500);
 }
 
 
