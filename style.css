@@ -164,7 +164,10 @@ p {
 }
 /*-------------------------------------------*/
 
-/* Change a few parameters for mobile screens */
+
+
+
+/* Override some settings for better mobile viewing */
 @media screen and (max-width: 1000px) {
     .panel {
         height: 80vh;
@@ -183,15 +186,18 @@ p {
     }
 
     .navBar {
-        height: 50px;
+        height: 75px;
     }
 
     .navText {
-        font-size: 25px;
+        font-size: 37px;
         text-align: center;
+        padding-left: 0;
     }
 
     .panel.top {
+        /* override the defined value it normally has */
+        height: 50vh;
         background-size: auto 100%;
     }
     .topPanelTitle span {
