@@ -13,6 +13,10 @@
     --fadedBlack: rgba(0, 0, 0, 0.7);
     --fadedWhite: rgba(255, 255, 255, 0.7);
     --fadedThemeColor: rgba(40, 41, 25, 0.7);
+
+    /* clear/transparent black color used for bordering of text that user
+        should still be able to see through */
+    --clearBlk: rgba(0, 0, 0, 0.4);
 }
 
 html, body {
@@ -90,18 +94,18 @@ p {
 .panel.aboutme {
     background-image: url("images/work.jpg");
     /*background-position: left top;*/
-    background-size: 100% 100%;
+    background-size: 100vw 100%;
     background-position: left center;
     background-repeat: no-repeat;
 }
 .content .aboutMeTitle {
-    background-color: black;
+    background-color: var(--fadedBlack);
     border-color: white;
     border-style: dotted;
     text-align: center;
 }
 .aboutMeContainer {
-    background-color: black;
+    background-color: var(--fadedBlack);
     border-color: white;
     border-style: dotted;
 }
@@ -122,7 +126,7 @@ p {
     background-repeat: no-repeat;
 }
 .projectText span {
-    background-color: var(--fadedBlack);
+    background-color: var(--clearBlk);
     border-radius: 9px;
     padding: 10px 20px;
 }
@@ -130,7 +134,7 @@ p {
 /* Container used to store description text and media links */
 .projDescrContainer {
     border-radius: 9px;
-    background-color: var(--fadedBlack);
+    background-color: var(--clearBlk);
 }
 
 .projTextDescr {
@@ -177,14 +181,16 @@ p {
         background-size: auto 100%;
     }
     .topPanelTitle span {
-        width: 80vw;
+        border-radius: 9px;
+        padding: 5px 10px;
+        font-size: 80%;
     }
 
     .panel.aboutme {
         background-size: auto 100%;
     }
     .content .aboutMeTitle {
-        font-size: 32px;
+        font-size: 26px;
     }
     .aboutMeText {
         font-size: 14px;
@@ -195,13 +201,13 @@ p {
     }
 
     .icon {
-        font-size: 80px;
+        font-size: 50px;
     }
 }
 
 /* Just in case the window is extremely narrow */
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 430px) {
     .topPanelTitle span {
-        font-size: 50%;
+        font-size: 55%;
     }
 }
