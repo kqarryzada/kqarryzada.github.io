@@ -64,26 +64,12 @@ p {
 }
 
 /*-------------------------------------------*/
-/* --------------Navigation bar------------- */
-/*-------------------------------------------*/
-.navBar {
-    background-color: var(--themeColor);
-    height: 40px;
-}
-
-.navText {
-    text-align: left;
-    font-family: "Raleway", sans-serif;
-    padding-left: 10px;
-}
-/*-------------------------------------------*/
-
-/*-------------------------------------------*/
 /* ----------------Top panel---------------- */
 /*-------------------------------------------*/
 .panel.top {
-    background-image: url("images/goDeeper4.png");
+    background-image: url("images/goDeeper.png");
     background-repeat: no-repeat;
+    background-color: #000000;
 
     /* Set the height value to force the top panel to end where the image height
     ends. Without this, there will be padding until the bottom of the screen.*/
@@ -91,7 +77,7 @@ p {
 }
 .topPanelTitle span {
     /*'span' is here to constrain background color to the area around the text*/
-    background: var(--fadedWhite);
+    background-color: var(--fadedWhite);
     border-radius: 9px;
     padding: 10px 20px;
     color: black;
@@ -136,7 +122,7 @@ p {
     background-repeat: no-repeat;
 }
 .projectText span {
-    background: var(--fadedBlack);
+    background-color: var(--fadedBlack);
     border-radius: 9px;
     padding: 10px 20px;
 }
@@ -144,7 +130,7 @@ p {
 /* Container used to store description text and media links */
 .projDescrContainer {
     border-radius: 9px;
-    background: var(--fadedBlack);
+    background-color: var(--fadedBlack);
 }
 
 .projTextDescr {
@@ -185,16 +171,6 @@ p {
 
     }
 
-    .navBar {
-        height: 75px;
-    }
-
-    .navText {
-        font-size: 25px;
-        text-align: center;
-        padding-left: 0;
-    }
-
     .panel.top {
         /* override the defined value it normally has */
         height: 50vh;
@@ -207,9 +183,19 @@ p {
     .panel.aboutme {
         background-size: auto 100%;
     }
+    .content .aboutMeTitle {
+        font-size: 32px;
+    }
+    .aboutMeText {
+        font-size: 14px;
+    }
 
     .panel.projects {
         background-size: auto 100%;
+    }
+
+    .icon {
+        font-size: 80px;
     }
 }
 
