@@ -98,12 +98,6 @@ p {
     background-position: left center;
     background-repeat: no-repeat;
 }
-.content .aboutMeTitle {
-    background-color: var(--fadedBlack);
-    border-color: white;
-    border-style: dotted;
-    text-align: center;
-}
 .aboutMeContainer {
     background-color: var(--fadedBlack);
     border-color: white;
@@ -113,6 +107,7 @@ p {
     color: white;
     font-family: "PT Mono", "Lucida Console", "Consolas", monospace;
     text-align: left;
+    font-size: 20px;
 }
 /*-------------------------------------------*/
 
@@ -189,9 +184,7 @@ p {
     .panel.aboutme {
         background-size: auto 100%;
     }
-    .content .aboutMeTitle {
-        font-size: 26px;
-    }
+
     .aboutMeText {
         font-size: 14px;
     }
